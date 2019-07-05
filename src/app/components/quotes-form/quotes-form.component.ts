@@ -1,3 +1,4 @@
+import { Quotes } from "./../../models/quotes";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -7,6 +8,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class QuotesFormComponent implements OnInit {
   showForm: boolean = false;
+
+  newQuote: Quotes = new Quotes(0, "", "", new Date(), "");
 
   constructor() {}
 
