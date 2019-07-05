@@ -4,7 +4,11 @@
     <div class="form-group">
       {{newQuote.author}}
       <label for="author_input">Author</label>
-      <input type="text" required class="form-control" [(ngModel)]="newQuote.author" name="author_input" #author>
+      <input type="text" name="author_input" [ngClass]="{'is-invalid': author_input.errors && author_input.touched}"
+        [(ngModel)]="newQuote.author" #author_input='ngModel' required class="form-control">
+      <div class="invalid-feedback" [hidden]="!author_input.errors?.required">
+        <p>First Name Required</p>
+      </div>
     </div>
     <div class="form-group">
       {{newQuote._quote}}
