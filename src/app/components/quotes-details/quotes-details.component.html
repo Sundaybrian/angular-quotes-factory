@@ -10,7 +10,7 @@
     <h4 class="card-title">{{quote.author}}</h4>
     <div class="buttons">
       <div id="votes">
-        <button class="btn"><i class="fa fa-thumbs-o-up"></i>{{quote.upvote}}</button>
+        <button class="btn" (click)="likeClicked(true)"><i class="fa fa-thumbs-o-up"></i>{{quote.upvote}}</button>
         <button class="btn"> <i class="fa fa-thumbs-o-down"></i>{{quote.downvote}}</button>
       </div>
       <div id="delete">
