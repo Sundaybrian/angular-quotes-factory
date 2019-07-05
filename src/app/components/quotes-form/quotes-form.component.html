@@ -1,8 +1,8 @@
 <div class="narrow mb-4">
   <button class="btn btn-sm btn-dark mb-2" (click)="this.showForm = !this.showForm">Add Quote</button>
   <form *ngIf="showForm" (ngSubmit)="submitQuote(quoteForm)" #quoteForm="ngForm">
+
     <div class="form-group">
-      {{newQuote.author}}
       <label for="author_input">Author</label>
       <input type="text" name="author_input" [ngClass]="{'is-invalid': author_input.errors && author_input.touched}"
         [(ngModel)]="newQuote.author" #author_input='ngModel' required class="form-control">
@@ -10,21 +10,35 @@
         <p>First Name Required</p>
       </div>
     </div>
+
     <div class="form-group">
-      {{newQuote._quote}}
       <label for="quote_input">Quote</label>
-      <textarea type="text" required class="form-control" rows="4" [(ngModel)]="newQuote._quote" name="quote_input"
-        #quote_input></textarea>
+      <textarea type="text" name="quote_input" required [(ngModel)]="newQuote._quote" #quote_input="ngModel"
+        [ngClass]="{'is-invalid':quote_input.errors && quote_input.touched}" class="form-control" rows="4"></textarea>
+      <div class="invalid-feedback" [hidden]="!quote_input.errors?.required">
+        <p>Quote is Required</p>
+      </div>
     </div>
+
     <div class="form-group">
       {{newQuote.date}}
       <label for="date_input">Date</label>
-      <input type="date" required class="form-control" [(ngModel)]="newQuote.date" name="date_input" #date_input>
+      <input type="date" name="date_input" required [ngClass]="{'is-invalid': date_input.errors && date_input.touched}"
+        [(ngModel)]="newQuote.date" #date_input='ngModel' class="form-control">
+      <div class="invalid-feedback" [hidden]="!date_input.errors?.required">
+        <p>Date is Required</p>
+      </div>
     </div>
+
+
     <div class="form-group">
       {{newQuote.user}}
       <label for="user_input">Submitted By</label>
-      <input type="text" required class="form-control" [(ngModel)]="newQuote.user" name="user_input" #user_input>
+      <input type="text" name="user_input" required [ngClass]="{'is-invalid':user_input.errors && user_input.touched}"
+        [(ngModel)]="newQuote.user" #user_input='ngModel' class="form-control">
+      <div class="invalid-feedback" [hidden]="!user_input.errors?.required">
+        <p>Your name is Required</p>
+      </div>
     </div>
     <button class="btn btn-primary btn-block" type="submit" [disabled]="!quoteForm.valid">Submit Quote</button>
   </form>

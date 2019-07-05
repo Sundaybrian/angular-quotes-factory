@@ -38,7 +38,7 @@ export class QuoteComponent implements OnInit {
     )
   ];
 
-  constructor() {}
+  constructor() { }
 
   showQuote(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
@@ -62,5 +62,5 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }
