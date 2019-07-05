@@ -1,0 +1,20 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons #votes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#votes button {
+  margin: 0 22px;
+}
+
+#votes button i.fa {
+  padding: 0 5px;
+  font-size: 22px;
+}
