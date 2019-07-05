@@ -1,4 +1,4 @@
-<app-quotes-form></app-quotes-form>
+<app-quotes-form (addQuote)="onAddQuote($event)"></app-quotes-form>
 
 <section class="container">
   <div *ngFor="let quote of quotes; let i = index">
