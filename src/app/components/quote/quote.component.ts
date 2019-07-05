@@ -50,5 +50,17 @@ export class QuoteComponent implements OnInit {
     }
   }
 
+  onDislikeClicked(clicked, index) {
+    if (clicked) {
+      this.quotes[index].downvote += 1;
+    }
+  }
+
+  onDelete(clicked, index) {
+    if (confirm("Are you sure hombre?")) {
+      this.quotes.splice(index, 1);
+    }
+  }
+
   ngOnInit() {}
 }

@@ -11,7 +11,8 @@
       </small>
     </header>
 
-    <app-quotes-details *ngIf="quote.showDescription" [quote]="quote" (likeIsClicked)="onLikeClicked($event,i)">
+    <app-quotes-details *ngIf="quote.showDescription" [quote]="quote" (likeIsClicked)="onLikeClicked($event,i)"
+      (dislikeIsClicked)="onDislikeClicked($event,i)" (deleteIsClicked)="onDelete($event,i)">
     </app-quotes-details>
   </div>
 
