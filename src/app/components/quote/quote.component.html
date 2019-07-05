@@ -1,15 +1,15 @@
 <app-quotes-form></app-quotes-form>
 
 <section class="container">
-  <div *ngFor="let quote of quotes">
+  <div *ngFor="let quote of quotes; let i = index">
     <header class="mb-2">
       <h2>{{quote.user}}</h2>
       <small>
-        <button class="btn btn-sm btn-dark">
+        <button class="btn btn-sm btn-dark" (click)="showQuote(i)">
           Toggle Quote <span><i class="fa fa-caret-right"></i></span></button>
       </small>
     </header>
-    <!-- <app-quotes-details></app-quotes-details> -->
+    <app-quotes-details *ngIf="quote.showDescription"></app-quotes-details>
   </div>
 
 </section>
