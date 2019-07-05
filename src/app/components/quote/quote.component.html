@@ -1,10 +1,15 @@
 <app-quotes-form></app-quotes-form>
 
-<div class="container">
-  <header class="mb-2">
-    <h2>Sunday</h2>
-    <small><button class="btn btn-sm btn-dark">Toggle Quote <span><i
-            class="fa fa-caret-right"></i></span></button></small>
-  </header>
-  <app-quotes-details></app-quotes-details>
-</div>
+<section class="container">
+  <div *ngFor="let quote of quotes">
+    <header class="mb-2">
+      <h2>{{quote.user}}</h2>
+      <small>
+        <button class="btn btn-sm btn-dark">
+          Toggle Quote <span><i class="fa fa-caret-right"></i></span></button>
+      </small>
+    </header>
+    <!-- <app-quotes-details></app-quotes-details> -->
+  </div>
+
+</section>
