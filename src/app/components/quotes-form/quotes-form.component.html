@@ -1,15 +1,15 @@
 <div class="narrow mb-4">
   <button class="btn btn-sm btn-dark mb-2" (click)="this.showForm = !this.showForm">Add Quote</button>
-  <form *ngIf="showForm" (ngSubmit)="submit()">
+  <form *ngIf="showForm" (ngSubmit)="submit()" #quoteForm="ngForm">
     <div class="form-group">
       {{newQuote.author}}
-      <label for="author">Author</label>
-      <input type="text" class="form-control" [(ngModel)]="newQuote.author" name="author" #author>
+      <label for="author_input">Author</label>
+      <input type="text" class="form-control" [(ngModel)]="newQuote.author" name="author_input" #author>
     </div>
     <div class="form-group">
       {{newQuote._quote}}
-      <label for="qoute_input">Quote</label>
-      <textarea type="text" class="form-control" rows="4" [(ngModel)]="newQuote._quote" name="qoute_input"
+      <label for="quote_input">Quote</label>
+      <textarea type="text" class="form-control" rows="4" [(ngModel)]="newQuote._quote" name="quote_input"
         #quote_input></textarea>
     </div>
     <div class="form-group">
@@ -19,8 +19,8 @@
     </div>
     <div class="form-group">
       {{newQuote.user}}
-      <label for="user_submit">Submitted By</label>
-      <input type="text" class="form-control" [(ngModel)]="newQuote.user" name="user_submit" #user_submit>
+      <label for="user_input">Submitted By</label>
+      <input type="text" class="form-control" [(ngModel)]="newQuote.user" name="user_input" #user_input>
     </div>
     <button class="btn btn-primary btn-block" type="submit">Submit Quote</button>
   </form>
