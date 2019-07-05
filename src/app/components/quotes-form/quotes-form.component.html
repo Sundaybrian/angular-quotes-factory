@@ -1,27 +1,27 @@
 <div class="narrow mb-4">
   <button class="btn btn-sm btn-dark mb-2" (click)="this.showForm = !this.showForm">Add Quote</button>
-  <form *ngIf="showForm" (ngSubmit)="submit()" #quoteForm="ngForm">
+  <form *ngIf="showForm" (ngSubmit)="submitQuote(quoteForm)" #quoteForm="ngForm">
     <div class="form-group">
       {{newQuote.author}}
       <label for="author_input">Author</label>
-      <input type="text" class="form-control" [(ngModel)]="newQuote.author" name="author_input" #author>
+      <input type="text" required class="form-control" [(ngModel)]="newQuote.author" name="author_input" #author>
     </div>
     <div class="form-group">
       {{newQuote._quote}}
       <label for="quote_input">Quote</label>
-      <textarea type="text" class="form-control" rows="4" [(ngModel)]="newQuote._quote" name="quote_input"
+      <textarea type="text" required class="form-control" rows="4" [(ngModel)]="newQuote._quote" name="quote_input"
         #quote_input></textarea>
     </div>
     <div class="form-group">
       {{newQuote.date}}
       <label for="date_input">Date</label>
-      <input type="date" class="form-control" [(ngModel)]="newQuote.date" name="date_input" #date_input>
+      <input type="date" required class="form-control" [(ngModel)]="newQuote.date" name="date_input" #date_input>
     </div>
     <div class="form-group">
       {{newQuote.user}}
       <label for="user_input">Submitted By</label>
-      <input type="text" class="form-control" [(ngModel)]="newQuote.user" name="user_input" #user_input>
+      <input type="text" required class="form-control" [(ngModel)]="newQuote.user" name="user_input" #user_input>
     </div>
-    <button class="btn btn-primary btn-block" type="submit">Submit Quote</button>
+    <button class="btn btn-primary btn-block" type="submit" [disabled]="!quoteForm.valid">Submit Quote</button>
   </form>
 </div>

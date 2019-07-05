@@ -17,5 +17,9 @@ export class QuotesFormComponent implements OnInit {
 
   // }
 
+  submitQuote(quoteForm) {
+    console.log(quoteForm.valid);
+  }
+
   ngOnInit() {}
 }
