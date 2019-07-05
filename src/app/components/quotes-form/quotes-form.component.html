@@ -1,6 +1,6 @@
 <div class="narrow mb-4">
-  <button class="btn btn-sm btn-dark mb-2">Add Quote</button>
-  <form>
+  <button class="btn btn-sm btn-dark mb-2" (click)="this.showForm = !this.showForm">Add Quote</button>
+  <form *ngIf="showForm">
     <div class="form-group">
       <label for="author">Author</label>
       <input type="text" class="form-control" name="author" #author>
