@@ -6,10 +6,12 @@
       <h2>{{quote.user}}</h2>
       <small>
         <button class="btn btn-sm btn-dark" (click)="showQuote(i)">
-          Toggle Quote <span><i class="fa fa-caret-right"></i></span></button>
+          Toggle Quote <span><i class="fa fa-caret-right"></i></span>
+        </button>
       </small>
     </header>
-    <app-quotes-details *ngIf="quote.showDescription"></app-quotes-details>
+
+    <app-quotes-details *ngIf="quote.showDescription" [quote]="quote"></app-quotes-details>
   </div>
 
 </section>
