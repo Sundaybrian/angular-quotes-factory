@@ -1,14 +1,15 @@
 <!-- <div appMostliked class="card "> -->
 <!-- <img src="https://lorempixel.com/400/200/people/3" alt="" class="card-img-top img-fluid"> -->
-<div class="card-body">
-  <p class="card-text">
-    <i class="fa fa-quote-left"></i>
-    {{quote._quote}}
-    <i class="fa fa-quote-right"></i>
-  </p>
-  <hr class="hr-line">
-
-  <h4 class="card-title">{{quote.author}}</h4>
+<div class="card-body ">
+  <blockquote>
+    <p class="card-text ">
+      <i class="fa fa-quote-left"></i>
+      {{quote._quote}}
+      <i class="fa fa-quote-right"></i>
+    </p>
+    <hr class="hr-line">
+    <cite class="card-title">-{{quote.author}}</cite>
+  </blockquote>
 </div>
 <!-- card-body -->
 <div class="card-footer">

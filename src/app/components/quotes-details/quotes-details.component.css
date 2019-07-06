@@ -18,3 +18,12 @@
   padding: 0 5px;
   font-size: 22px;
 }
+
+blockquote .fa {
+  padding: 1rem;
+  color: #05E0E9;
+}
+
+blockquote cite {
+  font-style: italic;
+}
