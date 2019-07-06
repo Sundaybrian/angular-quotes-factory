@@ -1,5 +1,7 @@
 <div class="mb-4">
-  <button class="btn btn-sm btn-dark mb-2" (click)="this.showForm = !this.showForm">Add Quote</button>
+  <button class="btn btn-sm btn-dark mb-2" (click)="this.showForm = !this.showForm">Add New Quote
+    <i [ngClass]="!this.showForm ? 'fa fa-plus': 'fa fa-minus'"></i>
+  </button>
   <form *ngIf="showForm" (ngSubmit)="submitQuote(quoteForm)" #quoteForm="ngForm">
 
     <div class="form-group">
