@@ -13,28 +13,35 @@ export class QuoteComponent implements OnInit {
       "Stephen Crane",
       "A man said to the universe Sir, I exist!However,replied the universe The fact has not created in me A sense of obligation.",
       new Date(1990, 6, 4, 12, 38, 15),
-      "Sunday Brian"
+      "Sunday Priest"
     ),
     new Quotes(
       1,
-      "Stephen Crane",
-      "A man said to the universe Sir, I exist!However,replied the universe The fact has not created in me A sense of obligation.",
+      " Billy Connolly",
+      "Before you judge a man, walk a mile in his shoes. After that who cares?... He’s a mile away and you’ve got his shoes!",
       new Date(1997, 6, 4, 17, 58, 15),
-      "Sunday Brian"
+      "Dmitri Petrovich"
     ),
     new Quotes(
       2,
-      "Stephen Crane",
-      "A man said to the universe Sir, I exist!However,replied the universe The fact has not created in me A sense of obligation.",
+      "Abraham Lincoln",
+      "If I were two-faced, would I be wearing this one?.",
       new Date(2007, 6, 4, 11, 18, 15),
-      "Sunday Omwami"
+      "Daniel Njuguna"
     ),
     new Quotes(
       3,
-      "Stephen Crane",
-      "A man said to the universe Sir, I exist!However,replied the universe The fact has not created in me A sense of obligation.",
+      "Al McGuire",
+      "The only mystery in life is why the kamikaze pilots wore helmets",
       new Date(2017, 6, 4, 9, 0, 15),
-      "Kobra"
+      "Yohann Wolfgang"
+    ),
+    new Quotes(
+      4,
+      "Ann Landers",
+      "At every party there are two kinds of people – those who want to go home and those who don’t. The trouble is, they are usually married to each other",
+      new Date(2006, 3, 2, 19, 12, 47),
+      "April Moon"
     )
   ];
 
