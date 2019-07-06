@@ -15,7 +15,7 @@
 <div class="card-footer">
   <div class="buttons">
     <div id="votes">
-      <button class="btn" (click)="likeClicked(true)"><i class="fa fa-thumbs-o-up"></i>{{quote.upvote}}</button>
+      <button class="btn"><i (click)="likeClicked(true)" class="fa fa-thumbs-o-up"></i>{{quote.upvote}}</button>
 
       <button class="btn" (click)="dislikeClicked(true)"><i class="fa fa-thumbs-o-down"></i>{{quote.downvote}}</button>
     </div>

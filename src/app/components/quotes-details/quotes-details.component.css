@@ -1,8 +1,14 @@
+blockquote .fa {
+  padding: 1rem;
+  /* color: #05E0E9; */
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 
 .buttons #votes {
   display: flex;
@@ -10,20 +16,40 @@
   align-items: center;
 }
 
-#votes button {
+#votes button.btn {
   margin: 0 22px;
+  border: 0 !important;
+  transition: none !important;
 }
 
-#votes button i.fa {
-  padding: 0 5px;
-  font-size: 22px;
+
+.card-footer i.fa {
+  padding: 0 8px;
+  font-size: 1.6rem;
 }
 
-blockquote .fa {
-  padding: 1rem;
-  color: #05E0E9;
-}
+
 
 blockquote cite {
   font-style: italic;
+}
+
+.card-footer .fa.fa-thumbs-o-up {
+  color: #05E0E9;
+}
+
+.card-footer .fa.fa-thumbs-o-down {
+  color: #4e1a3d;
+}
+
+.card-footer .fa.fa-times {
+  color: #ff2768;
+  font-size: 1.5rem;
+  transform: scale(0.9);
+  transition: .6s;
+  cursor: pointer;
+}
+
+.fa.fa-times:hover {
+  transform: scale(1.1);
 }
