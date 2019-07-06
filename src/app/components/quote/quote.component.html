@@ -6,8 +6,8 @@
     <div class="card">
       <div class="card-header d-flex justify-content-between align-items-center">
         <div class="user-info">
-          <h4 class="card-title">New Qoute By:{{quote.user}}</h4>
-          <small>Posted on: {{quote.date | timeAgo}}</small>
+          <h4 class="card-title">Submitted By:{{quote.user | titlecase}}</h4>
+          <small>{{quote.date | date:'mediumDate'}}:{{quote.date | timeAgo}}</small>
         </div>
 
         <div class="toggle-btn">
