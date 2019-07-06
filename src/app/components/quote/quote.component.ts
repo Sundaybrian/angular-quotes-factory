@@ -67,7 +67,7 @@ export class QuoteComponent implements OnInit {
     quote.id = qoutesArrayLength + 1;
     quote.date = new Date(quote.date);
 
-    this.quotes.push(quote);
+    this.quotes.unshift(quote);
 
   }
 

@@ -1,4 +1,4 @@
-<div class="narrow mb-4">
+<div class="mb-4">
   <button class="btn btn-sm btn-dark mb-2" (click)="this.showForm = !this.showForm">Add Quote</button>
   <form *ngIf="showForm" (ngSubmit)="submitQuote(quoteForm)" #quoteForm="ngForm">
 

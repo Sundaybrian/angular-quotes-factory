@@ -1,3 +1,4 @@
+
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { Quotes } from "../../models/quotes";
 
@@ -12,7 +13,9 @@ export class QuotesDetailsComponent implements OnInit {
   @Output() dislikeIsClicked = new EventEmitter<boolean>();
   @Output() deleteIsClicked = new EventEmitter<boolean>();
 
-  constructor() {}
+  // mostLikedDirectiveData: Quotes;
+
+  constructor() { }
 
   likeClicked(clicked: boolean) {
     this.likeIsClicked.emit(clicked);
@@ -26,5 +29,5 @@ export class QuotesDetailsComponent implements OnInit {
     this.deleteIsClicked.emit(clicked);
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

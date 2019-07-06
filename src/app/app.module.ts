@@ -7,6 +7,7 @@ import { QuoteComponent } from './components/quote/quote.component';
 import { QuotesFormComponent } from './components/quotes-form/quotes-form.component';
 import { QuotesDetailsComponent } from './components/quotes-details/quotes-details.component';
 import { NavComponent } from './components/nav/nav.component';
+import { MostlikedDirective } from './directives/mostliked.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavComponent } from './components/nav/nav.component';
     QuoteComponent,
     QuotesFormComponent,
     QuotesDetailsComponent,
-    NavComponent
+    NavComponent,
+    MostlikedDirective
   ],
   imports: [
     BrowserModule,
