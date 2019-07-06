@@ -1,9 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto&display=swap');
 
+html,
+body {
+  background: #cfeed1 !important;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
 
-/* helper classes */
-.narrow {
-  width: 80%;
-  margin: 0 auto;
+.btn-dark,
+.btn-primary {
+  background: #4e1a3d !important;
+  border-color: #4e1a3d !important;
 }
