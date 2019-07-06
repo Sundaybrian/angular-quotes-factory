@@ -1,5 +1,42 @@
-<div appMostliked class="card ">
-  <!-- <img src="https://lorempixel.com/400/200/people/3" alt="" class="card-img-top img-fluid"> -->
+<!-- <div appMostliked class="card "> -->
+<!-- <img src="https://lorempixel.com/400/200/people/3" alt="" class="card-img-top img-fluid"> -->
+<div class="card-body">
+  <p class="card-text">
+    <i class="fa fa-quote-left"></i>
+    {{quote._quote}}
+    <i class="fa fa-quote-right"></i>
+  </p>
+  <hr class="hr-line">
+
+  <h4 class="card-title">{{quote.author}}</h4>
+</div>
+<!-- card-body -->
+<div class="card-footer">
+  <div class="buttons">
+    <div id="votes">
+      <button class="btn" (click)="likeClicked(true)"><i class="fa fa-thumbs-o-up"></i>{{quote.upvote}}</button>
+
+      <button class="btn" (click)="dislikeClicked(true)"><i class="fa fa-thumbs-o-down"></i>{{quote.downvote}}</button>
+    </div>
+    <div id="delete">
+      <button class="btn" (click)="deleteQuote(true)"><i class="fa fa-times"></i></button>
+    </div>
+  </div>
+</div>
+<!-- card-footer -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div appMostliked class="card ">
+  <img src="https://lorempixel.com/400/200/people/3" alt="" class="card-img-top img-fluid">
   <div class="card-body">
     <p class="card-text">
       <i class="fa fa-quote-left"></i>
@@ -22,4 +59,4 @@
     </div>
 
   </div>
-</div>
+</div>  -->

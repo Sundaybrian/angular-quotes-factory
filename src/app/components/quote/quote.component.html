@@ -2,9 +2,9 @@
   <app-quotes-form (addQuote)="onAddQuote($event)"></app-quotes-form>
 
 
-  <div *ngFor="let quote of quotes; let i = index">
-    <div class="card card-body">
-      <div class="card-top d-flex justify-content-between align-items-center">
+  <div *ngFor="let quote of quotes; let i = index" class="mb-2">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
         <div class="user-info">
           <h4>New Qoute By:{{quote.user}}</h4>
           <small>Posted on: {{quote.date}}</small>
@@ -15,41 +15,14 @@
             <i [ngClass]="quote.showDescription ? 'fa fa-minus':'fa fa-plus' "></i>
           </button>
         </div>
-      </div><!-- top-card -->
+      </div><!-- card-header -->
 
-      <div class="card-body">
-        <app-quotes-details *ngIf="quote.showDescription" [quote]="quote" (likeIsClicked)="onLikeClicked($event,i)"
-          (dislikeIsClicked)="onDislikeClicked($event,i)" (deleteIsClicked)="onDelete($event,i)">
-        </app-quotes-details>
-
-      </div>
-      <!--card- -->
-
-
+      <app-quotes-details *ngIf="quote.showDescription" [quote]="quote" (likeIsClicked)="onLikeClicked($event,i)"
+        (dislikeIsClicked)="onDislikeClicked($event,i)" (deleteIsClicked)="onDelete($event,i)">
+      </app-quotes-details>
 
     </div>
     <!--card- -->
-
-
-
-
-
-
-
-
-    <ul class="list-unstyled list-group ">
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        <a href="/">Quote Submitted by:{{quote.user}}</a>
-        <span class="log-date">Submitted:{{quote.date | date}}</span>
-        <button class="btn btn-sm btn-dark" (click)="showQuote(i)">
-          <i [ngClass]="quote.showDescription ? 'fa fa-minus':'fa fa-plus' "></i>
-        </button>
-      </li>
-    </ul>
-
-    <app-quotes-details *ngIf="quote.showDescription" [quote]="quote" (likeIsClicked)="onLikeClicked($event,i)"
-      (dislikeIsClicked)="onDislikeClicked($event,i)" (deleteIsClicked)="onDelete($event,i)">
-    </app-quotes-details>
   </div>
 
 </section>
