@@ -12,28 +12,28 @@ export class QuoteComponent implements OnInit {
       0,
       "Stephen Crane",
       "A man said to the universe Sir, I exist!However,replied the universe The fact has not created in me A sense of obligation.",
-      new Date(1970, 6, 4, 12, 38, 15),
+      new Date(1990, 6, 4, 12, 38, 15),
       "Sunday Brian"
     ),
     new Quotes(
       1,
       "Stephen Crane",
       "A man said to the universe Sir, I exist!However,replied the universe The fact has not created in me A sense of obligation.",
-      new Date(1897, 6, 4, 17, 58, 15),
+      new Date(1997, 6, 4, 17, 58, 15),
       "Sunday Brian"
     ),
     new Quotes(
       2,
       "Stephen Crane",
       "A man said to the universe Sir, I exist!However,replied the universe The fact has not created in me A sense of obligation.",
-      new Date(1897, 6, 4, 11, 18, 15),
+      new Date(2007, 6, 4, 11, 18, 15),
       "Sunday Omwami"
     ),
     new Quotes(
       3,
       "Stephen Crane",
       "A man said to the universe Sir, I exist!However,replied the universe The fact has not created in me A sense of obligation.",
-      new Date(1897, 6, 4, 9, 0, 15),
+      new Date(2017, 6, 4, 9, 0, 15),
       "Kobra"
     )
   ];

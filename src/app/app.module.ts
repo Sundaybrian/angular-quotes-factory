@@ -8,7 +8,7 @@ import { QuotesFormComponent } from './components/quotes-form/quotes-form.compon
 import { QuotesDetailsComponent } from './components/quotes-details/quotes-details.component';
 import { NavComponent } from './components/nav/nav.component';
 import { MostlikedDirective } from './directives/mostliked.directive';
-import { ElapsedQuotesDaysPipe } from './pipes/elapsed-quotes-days.pipe';
+import { TimeAgoPipe } from 'time-ago-pipe'
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { ElapsedQuotesDaysPipe } from './pipes/elapsed-quotes-days.pipe';
     QuotesDetailsComponent,
     NavComponent,
     MostlikedDirective,
-    ElapsedQuotesDaysPipe
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
