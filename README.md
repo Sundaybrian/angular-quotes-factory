@@ -1,13 +1,14 @@
-# QoutesFactory
+# QuotesFactory
 
 #### 5-7-2019
----
+
 #### By Sunday Brian
 
 ## Description
+
 An Application where you can submit a quote and other users can rate it.
 
-##Installation
+## Installation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
@@ -16,6 +17,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 *Download the dependencies in the package.json using `npm install`
 *Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files
 ```
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -24,7 +26,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-##Behaviour Driven Development 
+## Behaviour Driven Development 
+
 1.Feature :Submit A Quote
 
    As a user,you must be able to add a quote for other to rate it
@@ -62,16 +65,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
      And leave them empty
      Then i should receive errors messages
      And the submit button will remain disabled     
-
             
-##Known Issues
+## Known Issues
+
 *There is no logic to highlight which quote has the most likes
 *A user can like a quote post multiple times
 *The submitted quote is erased on browser refresh
-*
 
+## Technologies Used
 
-##Technologies Used
 *Angular8
 *HTML
 *CSS
@@ -79,7 +81,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 *Bootstrap4
 *Font-Awesome
     
+## License 
 
-
-##License 
 MIT (c) 2019
