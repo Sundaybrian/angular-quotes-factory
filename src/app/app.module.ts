@@ -8,7 +8,8 @@ import { QuotesFormComponent } from './components/quotes-form/quotes-form.compon
 import { QuotesDetailsComponent } from './components/quotes-details/quotes-details.component';
 import { NavComponent } from './components/nav/nav.component';
 import { MostlikedDirective } from './directives/mostliked.directive';
-import { TimeAgoPipe } from 'time-ago-pipe'
+import { TimeAgoPipe } from 'time-ago-pipe';
+import { FooterComponent } from './components/footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TimeAgoPipe } from 'time-ago-pipe'
     QuotesDetailsComponent,
     NavComponent,
     MostlikedDirective,
-    TimeAgoPipe
+    TimeAgoPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
