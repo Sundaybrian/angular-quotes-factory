@@ -7,6 +7,7 @@
 ## Description
 
 An Application where you can submit a quote and other users can rate it.
+![alt text](https://github.com/Sundaybrian/angular-quotes-factory/blob/master/src/assets/quotesFactory.PNG "Quotes Factory Image")
 
 ## Installation
 
