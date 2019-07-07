@@ -6,6 +6,7 @@ html,
 body {
   background: #CFEED1 !important;
   font-family: 'IBM Plex Mono', sans-serif;
+  overflow: auto;
 }
 
 .btn-dark,

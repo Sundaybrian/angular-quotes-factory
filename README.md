@@ -28,7 +28,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Behaviour Driven Development 
 
-1.Feature :Submit A Quote
+1.Feature:**Submit A Quote**
 
    As a user,you must be able to add a quote for other to rate it
 
@@ -81,6 +81,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * Bootstrap4
 * Font-Awesome
     
-## License 
+## Lincense 
 
 MIT (c) 2019

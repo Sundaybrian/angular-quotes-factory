@@ -1,28 +1,32 @@
 <section class="container">
   <app-quotes-form (addQuote)="onAddQuote($event)"></app-quotes-form>
 
+  <div class="row">
+    <div *ngFor="let quote of quotes; let i = index" class="mb-2 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center" (click)="showQuote(i)">
+          <div class="user-info">
+            <h4 class="card-title">Submitted By:{{quote.user | titlecase}}</h4>
+            <small>{{quote.date | date:'mediumDate'}}:{{quote.date | timeAgo}}</small>
+          </div>
 
-  <div *ngFor="let quote of quotes; let i = index" class="mb-2">
-    <div class="card">
-      <div class="card-header d-flex justify-content-between align-items-center" (click)="showQuote(i)">
-        <div class="user-info">
-          <h4 class="card-title">Submitted By:{{quote.user | titlecase}}</h4>
-          <small>{{quote.date | date:'mediumDate'}}:{{quote.date | timeAgo}}</small>
-        </div>
+          <div class="toggle-btn">
+            <button class="btn btn-sm btn-dark">
+              <i [ngClass]="quote.showDescription ? 'fa fa-minus':'fa fa-plus' "></i>
+            </button>
+          </div>
+        </div><!-- card-header -->
 
-        <div class="toggle-btn">
-          <button class="btn btn-sm btn-dark">
-            <i [ngClass]="quote.showDescription ? 'fa fa-minus':'fa fa-plus' "></i>
-          </button>
-        </div>
-      </div><!-- card-header -->
+        <app-quotes-details [quote]="quote" *ngIf="quote.showDescription" (likeIsClicked)="onLikeClicked($event,i)"
+          (dislikeIsClicked)="onDislikeClicked($event,i)" (deleteIsClicked)="onDelete($event,i)">
+        </app-quotes-details>
 
-      <app-quotes-details [quote]="quote" *ngIf="quote.showDescription" (likeIsClicked)="onLikeClicked($event,i)"
-        (dislikeIsClicked)="onDislikeClicked($event,i)" (deleteIsClicked)="onDelete($event,i)">
-      </app-quotes-details>
-
+      </div>
+      <!--card- -->
     </div>
-    <!--card- -->
+    <!-- ngFor div -->
   </div>
+  <!-- row end -->
+
 
 </section>

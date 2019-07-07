@@ -1,3 +1,14 @@
 .card.card-body {
-  background: #E9EAE0;
+  border: 2px solid #4e1a3d;
+  /* background: #E9EAE0; */
+}
+
+.card.card-body {
+  background: linear-gradient(turqoise, #4e1a3d);
+  background: #CFEED1;
+}
+
+label {
+  font-weight: 600;
+  color: #4e1a3d;
 }

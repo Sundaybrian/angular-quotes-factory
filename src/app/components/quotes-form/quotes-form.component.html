@@ -1,4 +1,4 @@
-<button class="btn btn-sm btn-dark mb-2" (click)="this.showForm = !this.showForm">Add New Quote
+<button class="btn btn-sm btn-dark mb-3" (click)="this.showForm = !this.showForm">Add New Quote
   <i [ngClass]="!this.showForm ? 'fa fa-plus': 'fa fa-minus'"></i>
 </button>
 <div class="card card-body mb-4" *ngIf="showForm">
@@ -6,7 +6,8 @@
     <div class="form-group">
       <label for="author_input">Author</label>
       <input type="text" name="author_input" [ngClass]="{'is-invalid': author_input.errors && author_input.touched}"
-        [(ngModel)]="newQuote.author" #author_input='ngModel' required class="form-control">
+        [(ngModel)]="newQuote.author" #author_input='ngModel' required class="form-control"
+        placeholder="Enter Author's Name">
       <div class="invalid-feedback" [hidden]="!author_input.errors?.required">
         <p>First Name Required</p>
       </div>
@@ -15,7 +16,8 @@
     <div class="form-group">
       <label for="quote_input">Quote</label>
       <textarea type="text" name="quote_input" required [(ngModel)]="newQuote._quote" #quote_input="ngModel"
-        [ngClass]="{'is-invalid':quote_input.errors && quote_input.touched}" class="form-control" rows="4"></textarea>
+        [ngClass]="{'is-invalid':quote_input.errors && quote_input.touched}" class="form-control"
+        placeholder="Enter Quote" rows="4"></textarea>
       <div class="invalid-feedback" [hidden]="!quote_input.errors?.required">
         <p>Quote is Required</p>
       </div>
@@ -23,7 +25,7 @@
     <div class="form-group">
       <label for="user_input">Submitted By</label>
       <input type="text" name="user_input" required [ngClass]="{'is-invalid':user_input.errors && user_input.touched}"
-        [(ngModel)]="newQuote.user" #user_input='ngModel' class="form-control">
+        [(ngModel)]="newQuote.user" #user_input='ngModel' class="form-control" placeholder="Enter Your Name">
       <div class="invalid-feedback" [hidden]="!user_input.errors?.required">
         <p>Your name is Required</p>
       </div>
