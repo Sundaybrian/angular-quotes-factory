@@ -15,16 +15,11 @@ export class QuotesFormComponent implements OnInit {
 
   constructor() { }
 
-  // showQuoteForm() {
-
-  // }
 
   submitQuote(qouteForm) {
     console.log(qouteForm);
     console.log(this.newQuote);
     this.addQuote.emit(this.newQuote);
-
-    // this.newQuote = new Quotes(0, "", "", new Date(), "");
     this.form.reset();
   }
 
