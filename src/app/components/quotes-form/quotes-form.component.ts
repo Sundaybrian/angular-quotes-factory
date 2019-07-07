@@ -1,5 +1,5 @@
 import { Quotes } from "./../../models/quotes";
-import { Component, OnInit, Output, EventEmitter } from "@angular/core";
+import { Component, OnInit, Output, EventEmitter, ViewChild } from "@angular/core";
 
 @Component({
   selector: "app-quotes-form",
@@ -10,6 +10,7 @@ export class QuotesFormComponent implements OnInit {
   showForm: boolean = false;
   newQuote: Quotes = new Quotes(0, "", "", new Date(), "");
   @Output() addQuote = new EventEmitter<Quotes>();
+  @ViewChild('quoteForm') form: any;
 
 
   constructor() { }
@@ -22,6 +23,9 @@ export class QuotesFormComponent implements OnInit {
     console.log(qouteForm);
     console.log(this.newQuote);
     this.addQuote.emit(this.newQuote);
+
+    // this.newQuote = new Quotes(0, "", "", new Date(), "");
+    this.form.reset();
   }
 
   ngOnInit() { }

@@ -12,11 +12,10 @@ An Application where you can submit a quote and other users can rate it.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
-```
-*Clone the repo
-*Download the dependencies in the package.json using `npm install`
-*Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files
-```
+* Clone the repo
+* Download the dependencies in the package.json using `npm install`
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files
+
 
 ## Code scaffolding
 
@@ -68,18 +67,18 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
             
 ## Known Issues
 
-*There is no logic to highlight which quote has the most likes
-*A user can like a quote post multiple times
-*The submitted quote is erased on browser refresh
+* There is no logic to highlight which quote has the most likes
+* A user can like a quote post multiple times
+* The submitted quote is erased on browser refresh
 
 ## Technologies Used
 
-*Angular8
-*HTML
-*CSS
-*Typescript
-*Bootstrap4
-*Font-Awesome
+* Angular8
+* HTML
+* CSS
+* Typescript
+* Bootstrap4
+* Font-Awesome
     
 ## License 
 

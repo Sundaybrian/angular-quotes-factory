@@ -75,7 +75,6 @@ export class QuoteComponent implements OnInit {
     quote.date = new Date(quote.date);
 
     this.quotes.unshift(quote);
-
   }
 
   ngOnInit() { }
